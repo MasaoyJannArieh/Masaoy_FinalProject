@@ -1,0 +1,38 @@
+<nav class="navbar">
+
+    <div class="logo">
+
+        <a routerLink="/">📚 BookNest</a>
+
+    </div>
+
+    <ul class="nav-links">
+
+        <li>
+            <a
+                routerLink="/"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}">
+                Home
+            </a>
+        </li>
+
+        <li>
+            <a
+                routerLink="/books"
+                routerLinkActive="active">
+                My Library
+            </a>
+        </li>
+
+        <li>
+            <a
+                routerLink="/add-book"
+                routerLinkActive="active">
+                Add Book
+            </a>
+        </li>
+
+    </ul>
+
+</nav>
