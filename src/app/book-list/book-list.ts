@@ -262,16 +262,7 @@ export class BookListComponent {
           status: 'Reading',
           rating: 4,
           coverUrl: 'https://covers.openlibrary.org/b/isbn/9780201616224-L.jpg'
-        },
-        {
-          id: 25,
-          title: 'Think and Grow Rich',
-          author: 'Napoleon Hill',
-          genre: 'Self Help',
-          publicationYear: 1937,
-          status: 'Completed',
-          rating: 3,
-          coverUrl: 'https://covers.openlibrary.org/b/isbn/9781585424337-L.jpg'
+        
         }
       ];
 
