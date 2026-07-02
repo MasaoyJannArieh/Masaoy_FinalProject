@@ -2,44 +2,44 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .hero{
-    height:100vh;
+    min-height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
-    background:linear-gradient(135deg,#4B2E2B,#A67C52);
-    padding:20px;
+    padding:30px;
+    background:linear-gradient(135deg,#0F172A,#1E293B,#312E81);
 }
 
 .hero-content{
-    background:#FFF8F0;
-    padding:50px;
+    width:750px;
+    padding:60px;
     border-radius:20px;
-    max-width:700px;
+    background:#1E293B;
+    border:2px solid #3B82F6;
     text-align:center;
-    box-shadow:0 15px 35px rgba(0,0,0,0.25);
+    box-shadow:0 0 40px rgba(59,130,246,.4);
 }
 
 .hero h1{
     font-size:60px;
-    color:#5C4033;
+    color:#38BDF8;
+    text-shadow:0 0 15px rgba(56,189,248,.5);
     margin-bottom:15px;
 }
 
 .hero h2{
-    color:#7A5C45;
+    color:#A78BFA;
     margin-bottom:20px;
-    font-weight:600;
 }
 
 .hero p{
-    font-size:18px;
-    color:#5F5F5F;
+    color:#CBD5E1;
     line-height:1.8;
-    margin-bottom:35px;
+    font-size:18px;
+    margin-bottom:40px;
 }
 
 .buttons{
@@ -50,64 +50,28 @@
 }
 
 .btn{
-    text-decoration:none;
-    padding:14px 32px;
+    padding:14px 35px;
     border-radius:10px;
+    text-decoration:none;
     color:white;
-    font-size:18px;
     font-weight:bold;
-    transition:0.3s ease;
+    transition:.3s;
 }
 
-/* Browse Books Button */
 .primary{
-    background:#8B5E3C;
+    background:linear-gradient(90deg,#2563EB,#06B6D4);
 }
 
 .primary:hover{
-    background:#6F4E37;
-    transform:translateY(-3px);
-    box-shadow:0 8px 20px rgba(111,78,55,.3);
+    transform:translateY(-5px);
+    box-shadow:0 0 20px #06B6D4;
 }
 
-/* Add Book Button */
 .secondary{
-    background:#D4A373;
+    background:linear-gradient(90deg,#10B981,#22C55E);
 }
 
 .secondary:hover{
-    background:#BC8A5F;
-    transform:translateY(-3px);
-    box-shadow:0 8px 20px rgba(188,138,95,.3);
-}
-
-.btn:active{
-    transform:scale(0.98);
-}
-
-@media (max-width:768px){
-
-    .hero-content{
-        padding:35px 25px;
-    }
-
-    .hero h1{
-        font-size:42px;
-    }
-
-    .hero h2{
-        font-size:24px;
-    }
-
-    .hero p{
-        font-size:16px;
-    }
-
-    .buttons{
-        flex-direction:column;
-    }
-
-    .btn{
-        width:100%;
-    }
+    transform:translateY(-5px);
+    box-shadow:0 0 20px #22C55E;
 }
