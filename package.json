@@ -6,7 +6,10 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "server": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  
   },
   "private": true,
   "packageManager": "npm@10.9.2",
@@ -17,6 +20,12 @@
     "@angular/forms": "^21.2.0",
     "@angular/platform-browser": "^21.2.0",
     "@angular/router": "^21.2.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongodb": "^7.4.0",
+    "mongoose": "^9.7.3",
+    "nodemon": "^3.1.14",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0"
   },
