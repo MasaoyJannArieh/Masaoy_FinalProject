@@ -1,0 +1,57 @@
+<div class="container">
+
+    <h1>Edit Book</h1>
+
+    <form [formGroup]="bookForm" (ngSubmit)="updateBook()">
+
+        <label>Book Title</label>
+        <input
+            type="text"
+            formControlName="title">
+
+        <label>Author</label>
+        <input
+            type="text"
+            formControlName="author">
+
+        <label>Genre</label>
+        <input
+            type="text"
+            formControlName="genre">
+
+        <label>Publication Year</label>
+        <input
+            type="number"
+            formControlName="publicationYear">
+
+        <label>Reading Status</label>
+
+        <select formControlName="status">
+            <option>Want to Read</option>
+            <option>Currently Reading</option>
+            <option>Read</option>
+        </select>
+
+        <label>Rating</label>
+
+        <select formControlName="rating">
+            <option [value]="1">1 ⭐</option>
+            <option [value]="2">2 ⭐⭐</option>
+            <option [value]="3">3 ⭐⭐⭐</option>
+            <option [value]="4">4 ⭐⭐⭐⭐</option>
+            <option [value]="5">5 ⭐⭐⭐⭐⭐</option>
+        </select>
+
+        <label>Book Cover URL</label>
+
+        <input
+            type="text"
+            formControlName="coverUrl">
+
+        <button type="submit">
+            Update Book
+        </button>
+
+    </form>
+
+</div>

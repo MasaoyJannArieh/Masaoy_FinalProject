@@ -1,0 +1,67 @@
+<div class="container">
+
+    <h1>Add New Book</h1>
+
+    <form [formGroup]="bookForm" (ngSubmit)="addBook()">
+
+        <label>Book Title</label>
+        <input
+            type="text"
+            formControlName="title"
+            placeholder="Enter book title">
+
+        <label>Author</label>
+        <input
+            type="text"
+            formControlName="author"
+            placeholder="Enter author's name">
+
+        <label>Genre</label>
+        <input
+            type="text"
+            formControlName="genre"
+            placeholder="Fantasy, Romance, Mystery...">
+
+        <label>Publication Year</label>
+        <input
+            type="number"
+            formControlName="publicationYear">
+
+        <label>Reading Status</label>
+
+        <select formControlName="status">
+
+            <option>Want to Read</option>
+            <option>Currently Reading</option>
+            <option>Read</option>
+
+        </select>
+
+        <label>Rating</label>
+
+        <select formControlName="rating">
+
+            <option [value]="1">1 ⭐</option>
+            <option [value]="2">2 ⭐⭐</option>
+            <option [value]="3">3 ⭐⭐⭐</option>
+            <option [value]="4">4 ⭐⭐⭐⭐</option>
+            <option [value]="5">5 ⭐⭐⭐⭐⭐</option>
+
+        </select>
+
+        <label>Book Cover URL</label>
+
+        <input
+            type="text"
+            formControlName="coverUrl"
+            placeholder="https://example.com/book.jpg">
+
+        <button type="submit">
+
+            Add Book
+
+        </button>
+
+    </form>
+
+</div>
