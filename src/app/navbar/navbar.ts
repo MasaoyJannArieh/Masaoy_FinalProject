@@ -2,8 +2,6 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 import { AuthService } from '../auth.service';
-import { RouterLink, RouterLinkActive } from '@angular/router';
-
 
 @Component({
   selector: 'app-navbar',
@@ -13,7 +11,6 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   styleUrl: './navbar.css'
 })
 export class NavbarComponent {
-
 
   constructor(
     private auth: AuthService,

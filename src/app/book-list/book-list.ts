@@ -2,8 +2,6 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router, RouterLink } from '@angular/router';
 
-
-
 interface Book {
   id: number;
   title: string;
@@ -23,9 +21,7 @@ interface Book {
   styleUrl: './book-list.css'
 })
 export class BookListComponent {
-
   constructor(private router: Router) {}
-
 
   books: Book[] = [
     {
@@ -60,13 +56,8 @@ export class BookListComponent {
     },
     {
       id:4,
-
       title: "Harry Potter and the Sorcerer's Stone",
       author: "J.K. Rowling",
-
-      "title": "Harry Potter and the Sorcerer's Stone",
-      "author": "J.K. Rowling",
-
       "genre": "Fantasy",
       "publicationYear": 1997,
       "status": "Completed",
@@ -215,7 +206,6 @@ export class BookListComponent {
         },
         {
           id:19,
-
           title: "Atomic Habits",
           author: "James Clear",
           genre: "Self Help",
@@ -265,58 +255,6 @@ export class BookListComponent {
           coverUrl: "https://covers.openlibrary.org/b/isbn/9780262033848-L.jpg"
         },
         {
-
-        id:24,
-          "title": "Atomic Habits",
-          "author": "James Clear",
-          "genre": "Self Help",
-          "publicationYear": 2018,
-          "status": "Reading",
-          "rating": 5,
-          "coverUrl": "https://covers.openlibrary.org/b/isbn/9780735211292-L.jpg"
-        },
-        {
-          id:20,
-          "title": "Rich Dad Poor Dad",
-          "author": "Robert Kiyosaki",
-          "genre": "Finance",
-          "publicationYear": 1997,
-          "status": "Completed",
-          "rating": 5,
-          "coverUrl": "https://covers.openlibrary.org/b/isbn/9781612680194-L.jpg"
-        },
-        {
-          id:21,
-          "title": "The Psychology of Money",
-          "author": "Morgan Housel",
-          "genre": "Finance",
-          "publicationYear": 2020,
-          "status": "Reading",
-          "rating": 5,
-          "coverUrl": "https://covers.openlibrary.org/b/isbn/9780857197689-L.jpg"
-        },
-        {
-          id:22,
-          "title": "Clean Code",
-          "author": "Robert C. Martin",
-          "genre": "Programming",
-          "publicationYear": 2008,
-          "status": "Reading",
-          "rating": 4,
-          "coverUrl": "https://covers.openlibrary.org/b/isbn/9780132350884-L.jpg"
-        },
-        {
-          id:23,
-          "title": "Introduction to Algorithms",
-          "author": "Thomas H. Cormen",
-          "genre": "Programming",
-          "publicationYear": 2009,
-          "status": "Not Started",
-          "rating": 5,
-          "coverUrl": "https://covers.openlibrary.org/b/isbn/9780262033848-L.jpg"
-
-        },
-        {
           id: 24,
           title: 'The Pragmatic Programmer',
           author: 'Andrew Hunt & David Thomas',
@@ -328,7 +266,6 @@ export class BookListComponent {
         
         }
       ];
-
 
       deleteBook(id: number): void {
 
@@ -346,16 +283,3 @@ export class BookListComponent {
       
       }
     }
-
-    deleteBook(id: number): void {
-      const confirmDelete = confirm('Are you sure you want to delete this book?');
-    
-      if (confirmDelete) {
-        this.books = this.books.filter(book => book.id !== id);
-      }
-    }
-    
-    editBook(id: number): void {
-      this.router.navigate(['/edit-book', id]);
-    }
-    

@@ -1,22 +1,14 @@
 import { Component } from '@angular/core';
-<<<<<<< HEAD
 import { CommonModule } from '@angular/common';
 import { Router, RouterOutlet, NavigationEnd } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar';
 import { filter } from 'rxjs';
-=======
-import { RouterOutlet } from '@angular/router';
-import { NavbarComponent } from './navbar/navbar';
->>>>>>> f01f04b7fb9f677c62cc253683c9397e14a3ff3c
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
-<<<<<<< HEAD
     CommonModule,
-=======
->>>>>>> f01f04b7fb9f677c62cc253683c9397e14a3ff3c
     RouterOutlet,
     NavbarComponent
   ],
@@ -25,7 +17,6 @@ import { NavbarComponent } from './navbar/navbar';
 })
 export class App {
 
-<<<<<<< HEAD
   currentUrl = '';
 
   constructor(private router: Router) {
@@ -49,6 +40,4 @@ export class App {
     );
 
   }
-=======
->>>>>>> f01f04b7fb9f677c62cc253683c9397e14a3ff3c
 }
