@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home';
 import { BookListComponent } from './book-list/book-list';
 import { AddBookComponent } from './add-book/add-book';
 import { EditBookComponent } from './edit-book/edit-book';
+import { BookFormComponent } from './book-form/book-form';
 
 export const routes: Routes = [
 
@@ -43,6 +44,11 @@ export const routes: Routes = [
   {
     path: 'edit-book/:id',
     component: EditBookComponent
+  },
+
+  {
+    path: 'add-book',
+    component: BookFormComponent
   },
 
   {
