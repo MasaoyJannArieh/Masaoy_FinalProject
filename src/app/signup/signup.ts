@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-<<<<<<< HEAD
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule, FormBuilder, Validators } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
@@ -53,7 +52,6 @@ export class SignupComponent {
   }
 
 }
-=======
 
 @Component({
   selector: 'app-signup',
@@ -62,4 +60,4 @@ export class SignupComponent {
   styleUrl: './signup.css',
 })
 export class Signup {}
->>>>>>> f01f04b7fb9f677c62cc253683c9397e14a3ff3c
+
