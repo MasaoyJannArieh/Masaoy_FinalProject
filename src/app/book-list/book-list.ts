@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+<<<<<<< HEAD
 import { Router, RouterLink } from '@angular/router';
+=======
+import { RouterLink } from '@angular/router';
+>>>>>>> f01f04b7fb9f677c62cc253683c9397e14a3ff3c
 
 interface Book {
   id: number;
@@ -21,7 +25,10 @@ interface Book {
   styleUrl: './book-list.css'
 })
 export class BookListComponent {
+<<<<<<< HEAD
   constructor(private router: Router) {}
+=======
+>>>>>>> f01f04b7fb9f677c62cc253683c9397e14a3ff3c
 
   books: Book[] = [
     {
@@ -56,8 +63,13 @@ export class BookListComponent {
     },
     {
       id:4,
+<<<<<<< HEAD
       title: "Harry Potter and the Sorcerer's Stone",
       author: "J.K. Rowling",
+=======
+      "title": "Harry Potter and the Sorcerer's Stone",
+      "author": "J.K. Rowling",
+>>>>>>> f01f04b7fb9f677c62cc253683c9397e14a3ff3c
       "genre": "Fantasy",
       "publicationYear": 1997,
       "status": "Completed",
@@ -206,6 +218,7 @@ export class BookListComponent {
         },
         {
           id:19,
+<<<<<<< HEAD
           title: "Atomic Habits",
           author: "James Clear",
           genre: "Self Help",
@@ -253,6 +266,55 @@ export class BookListComponent {
           status: "Not Started",
           rating: 5,
           coverUrl: "https://covers.openlibrary.org/b/isbn/9780262033848-L.jpg"
+=======
+          "title": "Atomic Habits",
+          "author": "James Clear",
+          "genre": "Self Help",
+          "publicationYear": 2018,
+          "status": "Reading",
+          "rating": 5,
+          "coverUrl": "https://covers.openlibrary.org/b/isbn/9780735211292-L.jpg"
+        },
+        {
+          id:20,
+          "title": "Rich Dad Poor Dad",
+          "author": "Robert Kiyosaki",
+          "genre": "Finance",
+          "publicationYear": 1997,
+          "status": "Completed",
+          "rating": 5,
+          "coverUrl": "https://covers.openlibrary.org/b/isbn/9781612680194-L.jpg"
+        },
+        {
+          id:21,
+          "title": "The Psychology of Money",
+          "author": "Morgan Housel",
+          "genre": "Finance",
+          "publicationYear": 2020,
+          "status": "Reading",
+          "rating": 5,
+          "coverUrl": "https://covers.openlibrary.org/b/isbn/9780857197689-L.jpg"
+        },
+        {
+          id:22,
+          "title": "Clean Code",
+          "author": "Robert C. Martin",
+          "genre": "Programming",
+          "publicationYear": 2008,
+          "status": "Reading",
+          "rating": 4,
+          "coverUrl": "https://covers.openlibrary.org/b/isbn/9780132350884-L.jpg"
+        },
+        {
+          id:23,
+          "title": "Introduction to Algorithms",
+          "author": "Thomas H. Cormen",
+          "genre": "Programming",
+          "publicationYear": 2009,
+          "status": "Not Started",
+          "rating": 5,
+          "coverUrl": "https://covers.openlibrary.org/b/isbn/9780262033848-L.jpg"
+>>>>>>> f01f04b7fb9f677c62cc253683c9397e14a3ff3c
         },
         {
           id: 24,
@@ -267,6 +329,7 @@ export class BookListComponent {
         }
       ];
 
+<<<<<<< HEAD
       deleteBook(id: number): void {
 
         const confirmDelete = confirm('Are you sure you want to delete this book?');
@@ -283,3 +346,13 @@ export class BookListComponent {
       
       }
     }
+=======
+  deleteBook(id: number): void {
+    const confirmDelete = confirm('Are you sure you want to delete this book?');
+
+    if (confirmDelete) {
+      this.books = this.books.filter(book => book.id !== id);
+    }
+  }
+}
+>>>>>>> f01f04b7fb9f677c62cc253683c9397e14a3ff3c

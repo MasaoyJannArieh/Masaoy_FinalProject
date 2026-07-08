@@ -1,7 +1,10 @@
 import { Routes } from '@angular/router';
 
+<<<<<<< HEAD
 import { LoginComponent } from './login/login';
 import { SignupComponent } from './signup/signup';
+=======
+>>>>>>> f01f04b7fb9f677c62cc253683c9397e14a3ff3c
 import { HomeComponent } from './home/home';
 import { BookListComponent } from './book-list/book-list';
 import { AddBookComponent } from './add-book/add-book';
@@ -11,6 +14,7 @@ export const routes: Routes = [
 
   {
     path: '',
+<<<<<<< HEAD
     redirectTo: 'login',
     pathMatch: 'full'
   },
@@ -27,6 +31,8 @@ export const routes: Routes = [
 
   {
     path: 'home',
+=======
+>>>>>>> f01f04b7fb9f677c62cc253683c9397e14a3ff3c
     component: HomeComponent
   },
 
@@ -47,7 +53,11 @@ export const routes: Routes = [
 
   {
     path: '**',
+<<<<<<< HEAD
     redirectTo: 'login'
+=======
+    redirectTo: ''
+>>>>>>> f01f04b7fb9f677c62cc253683c9397e14a3ff3c
   }
 
 ];

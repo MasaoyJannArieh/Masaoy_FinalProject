@@ -1,6 +1,18 @@
 # BookLibraryManager
 
+<<<<<<< HEAD
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.18.
+=======
+<<<<<<< HEAD
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.18.
+=======
+<<<<<<< HEAD
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.18.
+=======
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.17.
+>>>>>>> 6c3cdb81cb273ee774d34f5a4607f5702d92a809
+>>>>>>> 613b9a3cfde06e1063a5e253987c111fef87d66b
+>>>>>>> f01f04b7fb9f677c62cc253683c9397e14a3ff3c
 
 ## Development server
 
